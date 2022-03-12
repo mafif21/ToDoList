@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&family=Montserrat:wght@700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +15,7 @@ body {
   margin: 50px auto;
   background-color: #2d31fa;
   color: white;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .container {
@@ -21,11 +23,9 @@ body {
   justify-items: center;
   padding: 1em;
   box-sizing: border-box;
-  /* border: 1px solid black; */
 }
 
 .heading {
-  /* border: 1px solid black; */
   margin-bottom: 1.5em;
   display: grid;
   justify-items: center;
@@ -34,12 +34,12 @@ body {
 
 .heading h1 {
   margin-bottom: 1em;
+  font-family: "Montserrat", sans-serif;
 }
 
 .input-user {
   display: flex;
   justify-content: center;
-  /* border: 1px solid black; */
   width: 90%;
 }
 
@@ -57,16 +57,18 @@ body {
   margin: 0;
   border-radius: 0px 8px 8px 0px;
   display: block;
+  background-color: #13f322;
+  color: white;
+  font-family: "Hind Madurai", sans-serif;
 }
 
 .storage {
-  /* border: 1px solid black; */
-  width: 80%;
+  width: 90%;
 }
 
 .storage ul {
-  /* border: 1px solid black; */
   list-style: none;
+  font-family: "Hind Madurai", sans-serif;
 }
 
 .storage ul li {
@@ -74,18 +76,16 @@ body {
   grid-template-columns: 4fr 1fr;
   border: 1px solid white;
   margin-bottom: 4px;
-  /* background-color: white; */
 }
 
 .storage ul li p {
-  /* width: 80%; */
   color: white;
   padding: 0.4em;
   font-size: 14px;
-  /* border: 1px solid black; */
+  transition: 800ms;
 }
 
-.right button {
+.right .delete {
   padding: 0.4em;
   width: 100%;
   height: 100%;
@@ -95,16 +95,40 @@ body {
   display: block;
   background-color: red;
   color: white;
+  transition: 800ms;
+}
+
+.profile {
+  margin-top: 2.5em;
+  font-size: 0.8rem;
+  font-family: "Hind Madurai", sans-serif;
+  display: flex;
+}
+
+.profile .fa-github {
+  font-size: 16px;
+  margin-left: 4px;
+  color: white;
 }
 
 /* hovering */
-/* .right button:hover {
-  background-color: red;
-  color: white;
-} */
+.right .delete:hover {
+  background-color: white;
+  color: red;
+  cursor: pointer;
+}
 
 .storage ul li p:hover {
   background-color: #051367;
   border: none;
   color: white;
+}
+
+.finished {
+  text-decoration: line-through;
+}
+
+/* icon hover */
+.profile .fa-github:hover {
+  color: black;
 }
