@@ -49,6 +49,7 @@ body {
   width: 100%;
   border: none;
   margin: 0;
+  outline: none !important;
 }
 
 .input-user button {
