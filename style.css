@@ -2,3 +2,109 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  background: rgb(223, 246, 255);
+  background: linear-gradient(90deg, rgba(223, 246, 255, 1) 29%, rgba(93, 139, 244, 1) 84%);
+}
+
+.todo {
+  width: 22em;
+  margin: 50px auto;
+  background-color: #2d31fa;
+  color: white;
+  border-radius: 10px;
+}
+
+.container {
+  display: grid;
+  justify-items: center;
+  padding: 1em;
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+}
+
+.heading {
+  /* border: 1px solid black; */
+  margin-bottom: 1.5em;
+  display: grid;
+  justify-items: center;
+  width: 100%;
+}
+
+.heading h1 {
+  margin-bottom: 1em;
+}
+
+.input-user {
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid black; */
+  width: 90%;
+}
+
+.input-user input {
+  padding: 8px;
+  border-radius: 8px 0px 0px 8px;
+  width: 100%;
+  border: none;
+  margin: 0;
+}
+
+.input-user button {
+  padding: 8px;
+  border: none;
+  margin: 0;
+  border-radius: 0px 8px 8px 0px;
+  display: block;
+}
+
+.storage {
+  /* border: 1px solid black; */
+  width: 80%;
+}
+
+.storage ul {
+  /* border: 1px solid black; */
+  list-style: none;
+}
+
+.storage ul li {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  border: 1px solid white;
+  margin-bottom: 4px;
+  /* background-color: white; */
+}
+
+.storage ul li p {
+  /* width: 80%; */
+  color: white;
+  padding: 0.4em;
+  font-size: 14px;
+  /* border: 1px solid black; */
+}
+
+.right button {
+  padding: 0.4em;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  border: none;
+  font-size: 10px;
+  display: block;
+  background-color: red;
+  color: white;
+}
+
+/* hovering */
+/* .right button:hover {
+  background-color: red;
+  color: white;
+} */
+
+.storage ul li p:hover {
+  background-color: #051367;
+  border: none;
+  color: white;
+}
